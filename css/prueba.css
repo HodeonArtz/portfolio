@@ -1,0 +1,24 @@
+.circulo-derecha,
+.circulo-izquierda,
+.linea-izquierda,
+.linea-derecha {
+  animation: infinite alternate arriba-abajo1 3s ease-in-out;
+}
+
+.circulo-izquierda {
+  animation-delay: 0.5s;
+}
+.linea-derecha {
+  animation-delay: 0.9s;
+}
+.linea-izquierda {
+  animation-delay: 1.4s;
+}
+@keyframes arriba-abajo1 {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translatey(-3%);
+  }
+}
