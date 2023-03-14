@@ -536,6 +536,9 @@ input[type="radio"]:checked + label {
   .colTitle {
     padding-left: inherit;
   }
+  .martiDiciano {
+    padding-left: 4px;
+  }
 }
 @media screen and (max-width: 768px) {
   #martiD-subtitle {
