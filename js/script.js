@@ -1,6 +1,54 @@
 "use strict";
 //////// Scroll navbar fix
 
+//////// Marti diciano Text effect
+// const martiTitle = document.querySelector(".giant-title");
+// const splitMartiTitleArr = martiTitle.textContent.split("");
+
+// const martiSubtitle = document.querySelector("#martiD-subtitle");
+// const splitSubtitle = martiSubtitle.textContent.split("");
+
+// martiTitle.textContent = "M";
+// martiSubtitle.textContent = "";
+// for (let letter = 1; letter < splitMartiTitleArr.length; letter++) {
+//   setTimeout(function () {
+//     martiTitle.textContent += splitMartiTitleArr[letter];
+//   }, letter * 65);
+// }
+// for (let letter = 0; letter < splitSubtitle.length; letter++) {
+//   setTimeout(function () {
+//     martiSubtitle.textContent += splitSubtitle[letter];
+//   }, letter * 35);
+// }
+const martiTitle = document.querySelector(".giant-title");
+const splitMartiTitleArr = martiTitle.textContent.split("");
+
+const martiSubtitle = document.querySelector("#martiD-subtitle");
+const splitSubtitle = martiSubtitle.textContent.split("");
+
+martiTitle.textContent = "M";
+martiSubtitle.textContent = "";
+
+function addLetterTitle(i) {
+  if (i < splitMartiTitleArr.length) {
+    martiTitle.textContent += splitMartiTitleArr[i];
+    requestAnimationFrame(() => addLetterTitle(i + 1));
+  }
+}
+
+function addLetterSubtitle(i) {
+  if (i < splitSubtitle.length) {
+    martiSubtitle.textContent += splitSubtitle[i];
+    requestAnimationFrame(() => addLetterSubtitle(i + 1));
+  }
+}
+
+requestAnimationFrame(() => addLetterTitle(1));
+requestAnimationFrame(() => addLetterSubtitle(0));
+
+// console.log(splitMartiTitleArr);
+
+////////////////////////////////
 const navigationHeight = document.querySelector(".nav").offsetHeight;
 // console.log(navigationHeight);
 document.documentElement.style.setProperty(
@@ -48,28 +96,6 @@ window.onscroll = function () {
   changeNavbar();
 };
 // console.log(posicionScrollSobreMi);
-
-////////////////////////////////
-//////// Marti diciano Text effect
-const martiTitle = document.querySelector(".giant-title");
-const splitMartiTitleArr = martiTitle.textContent.split("");
-
-const martiSubtitle = document.querySelector(".martiD-subtitle");
-const splitSubtitle = martiSubtitle.textContent.split("");
-
-martiTitle.textContent = "M";
-martiSubtitle.textContent = "";
-for (let letter = 1; letter < splitMartiTitleArr.length; letter++) {
-  setTimeout(function () {
-    martiTitle.textContent += splitMartiTitleArr[letter];
-  }, letter * 65);
-}
-for (let letter = 0; letter < splitSubtitle.length; letter++) {
-  setTimeout(function () {
-    martiSubtitle.textContent += splitSubtitle[letter];
-  }, letter * 35);
-}
-// console.log(splitMartiTitleArr);
 
 ////////////////////////////////
 //////// Sobre mi textos
