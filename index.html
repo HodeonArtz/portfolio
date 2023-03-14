@@ -23,15 +23,9 @@
     />
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="Bootstrap/bootstrap.min.css" />
-    <script src="Bootstrap/bootstrap.bundle.min.js"></script>
-    <script
-      src="Bootstrap/bootstrap.min.js"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    ></script>
-    <script src="Bootstrap/popper.min.js"></script>
-    <script src="Bootstrap/jquery-3.6.3.min.js"></script>
-    
+
+    <script src="../Bootstrap/popper.min.js"></script>
+    <script src="../Bootstrap/jquery-3.6.3.min.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- FONTAWESOME -->
@@ -40,8 +34,8 @@
       href="https://kit.fontawesome.com/4bf9d03b76.css"
       crossorigin="anonymous"
     />
-    <!-- Title -->
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <!-- Title -->
     <title>Marti Diciano</title>
   </head>
   <body>
@@ -76,13 +70,13 @@
                 >Inicio</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item sobreMi-link">
               <a class="nav-link text-reset" href="#sobreMi">Sobre Mí</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item proyectos-link">
               <a class="nav-link text-reset" href="#proyectos">Proyectos</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item miValor-link">
               <a href="#miValor" class="text-reset nav-link">Mi valor</a>
             </li>
           </ul>
@@ -216,18 +210,18 @@
     </div>
     <!-- Sobre mí -->
     <div class="container-fluid sobreMi">
-      <div class="container pb-5 sobreMi-Container">
-        <div class="row sobreMi-row text-start align-items-end">
+      <div class="container pb-5 grid-system">
+        <div class="row grid-system-item text-start align-items-end">
           <div class="col hidden">
             <img src="media\img\svg\Circulo_morado.svg" alt="circulo" />
           </div>
         </div>
-        <div class="row sobreMi-row">
+        <div class="row grid-system-item">
           <div class="col">
             <div class="row d-flex">
               <div class="col-12 sobreMi-Item hidden">
                 <h1
-                  class="climateFont title text-reset pt-3 sobreMiTitulo"
+                  class="climateFont title text-reset pt-3 hidden"
                   id="sobreMi"
                 >
                   Sobre Mí
@@ -238,13 +232,13 @@
               <div
                 class="col-md-5 text-center justify-content-center align-items-center d-flex sobreMi-Item hidden"
               >
-                <ul class="botones">
-                  <div class="caja-seleccionar">
+                <ul class="botones grid-system">
+                  <div class="grid-system-item">
                     <li>
-                      <div class="caja1"><span>s</span></div>
+                      <div class="caja1"><span class="opacity-0">s</span></div>
                     </li>
                   </div>
-                  <div class="botones-reales">
+                  <div class="botones-reales grid-system-item">
                     <li>
                       <input
                         type="radio"
@@ -266,10 +260,10 @@
                 </ul>
               </div>
               <div
-                class="col-md-7 sobreParrafos justify-content-center align-items-center hidden"
+                class="col-md-7 justify-content-center align-items-center hidden grid-system"
               >
-                <div class="text text-1">
-                  <p class="">
+                <div class="text text-1 grid-system-item">
+                  <p>
                     Soy <b>Glen Marti Diciano Ibias</b>. He estudiado un Grado
                     Medio de Sistemas Microinformáticos y Redes en STUCOM. En el
                     futuro tengo pensado estudiar un Grado Superior de
@@ -288,7 +282,7 @@
                     montaje y mantenimiento de equipos.
                   </p>
                 </div>
-                <div class="text text-2">
+                <div class="text text-2 grid-system-item">
                   <p>
                     Mi objetivo es poder continuar mi formación en un Grado
                     Superior de Desarrollo de Aplicaciones Web y poder adquirir
@@ -302,7 +296,7 @@
                     me motiva más a conocer más sobre ello.
                   </p>
                 </div>
-                <div class="text text-3">
+                <div class="text text-3 grid-system-item">
                   <p>
                     Me considero una persona responsable, organizada y bastante
                     cooperativa. Soy una persona que no busca ningún tipo de
@@ -353,7 +347,7 @@
                   ></a>
                 </h2>
               </div>
-              <div class="row">
+              <div class="row hidden">
                 <div class="col-md-12 center-change hidden">
                   <p>
                     En este primer proyecto, hemos formado un equipo de entre 3
@@ -611,9 +605,9 @@
         </div>
         <div class="row">
           <div
-            class="col-md-7 miValor-textos order-md-1 order-2 justify-content-center align-items-center hidden"
+            class="col-md-7 miValor-textos order-md-1 order-2 justify-content-center align-items-center hidden grid-system"
           >
-            <div class="text2 text2-1">
+            <div class="text2 text2-1 grid-system-item">
               Conmigo la empresa tendrá
               <b
                 >mayor capacidad de encontrar soluciones creativas e
@@ -621,14 +615,14 @@
               >, con mayor margen de ofrecer soluciones efectivas a sus
               clientes.
             </div>
-            <div class="text2 text2-2">
+            <div class="text2 text2-2 grid-system-item">
               Conmigo la empresa tendrá <b>un recurso altamente adaptable</b>.
               Con mi capacidad de aprender rápidamente nuevas tecnologías, junto
               con mi habilidad para ajustarse a cambios en los objetivos, me
               permitiría satisfacer las necesidades de sus clientes y mantenerse
               competitivo en un entorno cada vez más dinámico y exigente.
             </div>
-            <div class="text2 text2-3">
+            <div class="text2 text2-3 grid-system-item">
               Conmigo, la empresa tendrá
               <b>un profesional altamente comprometido</b>
               en su equipo, con mis esfuerzos por cumplir las metas y objetivos
@@ -640,15 +634,15 @@
           <div
             class="col-md-5 order-md-2 order-1 text-center justify-content-center align-items-center d-flex hidden"
           >
-            <ul class="botones">
-              <div class="caja-seleccionar">
+            <ul class="botones grid-system">
+              <div class="grid-system-item">
                 <li>
                   <div class="caja2">
-                    <span class="caja2Texto">C</span>
+                    <span class="caja2Texto opacity-0">C</span>
                   </div>
                 </li>
               </div>
-              <div class="botones-reales">
+              <div class="botones-reales grid-system-item">
                 <li>
                   <input
                     type="radio"
@@ -675,7 +669,7 @@
       </div>
     </div>
     <!-- Script JS -->
-    
+    <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script
       src="https://kit.fontawesome.com/4bf9d03b76.js"
