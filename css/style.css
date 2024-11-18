@@ -548,7 +548,7 @@ ul {
       position: relative;
       filter: blur(0px);
     }
-    .cells-container .cell::after {
+    /* .cells-container .cell::after {
       content: "";
       position: absolute;
       width: 100%;
@@ -560,7 +560,6 @@ ul {
       width: 100%;
       height: 50%;
       align-self: center;
-      /* z-index: 1;t */
       pointer-events: none;
       transition: height 0.6s cubic-bezier(0.2, 1.56, 0.51, 1.02),
         filter 0.3s ease-in, opacity 0.3s ease-in !important;
@@ -568,7 +567,7 @@ ul {
     .cells-container .cell:hover::after {
       height: 75%;
       opacity: 0;
-    }
+    } */
     /* -- proyectos -- */
     .proyectos {
       position: fixed;
