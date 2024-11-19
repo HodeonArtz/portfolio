@@ -1243,6 +1243,14 @@ iframe * {
   .section--contacto .section-main {
     padding: 0 20rem;
   }
+  :root {
+    --proyecto-px: 350px;
+  }
+}
+@media screen and (min-width: 1650px) {
+  :root {
+    --proyecto-px: 500px;
+  }
 }
 .loader {
   position: fixed;
